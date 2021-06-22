@@ -73,7 +73,7 @@ def appendInList(username):
 
 def sortListbyPopularity(username):
         
-    #try:
+    try:
         
         global cur_username
         
@@ -103,8 +103,8 @@ def sortListbyPopularity(username):
         
     
         
-    #except:
-    #        sortedList = []
+    except:
+            sortedList = []
         
     
         
