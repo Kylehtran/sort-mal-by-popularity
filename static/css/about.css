@@ -1,0 +1,61 @@
+body {
+    margin: 0px;
+}
+
+div#hello_pic {
+    float: right;
+    top: 10%;
+    text-align: center;
+}
+
+#about_message{
+
+    font-family: Verdana;
+    font-size: 15px;
+}
+
+#bar {
+    background-color: #303030;
+    color: #FFFFFF;
+    display: block;
+    height: 60px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    background: #303030;
+    color: white;
+    height: 60px;
+    width: 120px;
+    font-size: 15px;
+    display: block;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+    #home:hover {
+        background: #4D4D4D;
+    }
+
+#aboutpage {
+    background: #303030;
+    color: #FFFFFF;
+    height: 60px;
+    width: 120px;
+    font-size: 15px;
+    display: block;
+    padding: 0;
+    border: none;
+    background: none;
+    margin-left: 120px;
+    margin-top: -60px;
+}
+
+    #aboutpage:hover {
+        background: #4D4D4D;
+    }
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}" type="text/css" media="screen">
+    <title>About</title>
+</head>
+<body>
+    <div id="bar">
+        <form action="/" method="GET">
+
+            <button class="btn btn-default" type="submit" id="home">
+                <span aria-hidden="true" class="glyphicon glyphicon-ok"></span>
+                Home
+            </button>
+        </form>
+        <form action={{url_for('about')}} method="GET">
+
+            <button class="btn btn-default" type="submit" id="aboutpage">
+                <span aria-hidden="true" class="glyphicon glyphicon-ok"></span>
+                About
+            </button>
+        </form>
+    </div>
+    <div id="hello_pic">
+        <a href="https://myanimelist.net/anime/16417/Tamako_Market" target="_blank">
+            <img src="{{url_for('static', filename='hello.gif')}}" id="hellogif">
+        </a>
+           
+    </div>
+    <p id="about_message">
+        Hi everyone!
+        <br /><br />I created a site to sort people's list by popularity. I was curious about this information and I didn't see a way to do it on this site nor did I find a different web app that does it, so I decided to make one for my first project. I'm pretty much a beginner and this is mostly for academic purposes, but the site should work fine and I will try to implement any suggestions in the future if possible!
+        <br /><br />For some reason, when calling the API for the user's list, it doesn't get every single anime entry in the user list. Therefore, the longer list you have, the more likely there will be missing entries unfortunately.
+        <br /><br /><br /><a href="https://myanimelist.net/profile/Ktran" target="_blank" id="profile">My profile!</a>
+    </p>
+
+</body>
+</html>
+
