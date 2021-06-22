@@ -33,14 +33,15 @@ def loadDatabase():
                 
             entry = Database(int(resp["data"][x]["ranking"]["rank"]), int(resp["data"][x]["node"]["id"]),resp["data"][x]["node"]["title"]) 
             db.session.add(entry)
-            db.session.commit()
-             
+            
             
         if ("next" in resp["paging"]):
             resp = requests.get(resp["paging"]["next"], headers=my_headers).json()
             next = True
         else:
             next = False
+    db.session.commit()
+             
 
 if __name__ == "__main__":
 
